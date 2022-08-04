@@ -1,9 +1,3 @@
 [submodule "cbits/bgfx"]
 	path = cbits/bgfx
 	url = https://github.com/bkaradzic/bgfx
-[submodule "cbits/bx"]
-	path = cbits/bx
-	url = https://github.com/bkaradzic/bx
-[submodule "cbits/bimg"]
-	path = cbits/bimg
-	url = https://github.com/bkaradzic/bimg
