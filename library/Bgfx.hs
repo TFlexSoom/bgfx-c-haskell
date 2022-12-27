@@ -1,4 +1,4 @@
 module Bgfx where
 
-derp :: [Int]
+derp :: [Integer]
 derp = []

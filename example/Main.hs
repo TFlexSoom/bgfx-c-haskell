@@ -5,4 +5,4 @@ import Bgfx (derp)
 main :: IO ()
 main = do 
     putStrLn "Hello, Haskell!"
-    show derp
+    putStrLn (showList derp "")
