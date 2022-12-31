@@ -1,8 +1,8 @@
 module Main where
 
-import Bgfx (derp)
+import Bgfx (bgfx_shutdown)
 
 main :: IO ()
 main = do 
     putStrLn "Hello, Haskell!"
-    putStrLn (showList derp "")
+    bgfx_shutdown

@@ -11,9 +11,10 @@ license:        BSD-3-Clause
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
-    README.md
-    CHANGELOG.md
+  README.md
+  CHANGELOG.md
 
+ 
 
 library bgfx-c-haskell-lib
   exposed-modules:
@@ -23,6 +24,17 @@ library bgfx-c-haskell-lib
   build-depends:
       base ^>=4.16.0.0
   default-language: Haskell2010
+  extra-lib-dirs:
+    cbits/bgfx/.build/win64_vs2017/bin
+  extra-libraries:
+    bgfx-shared-libRelease
+  include-dirs:
+    cbits/bgfx/include/bgfx/c99
+    cbits/bx/include
+  includes:
+    bx/platform.h
+    bgfx.h
+
 
 executable bgfx-c-haskell-example
     main-is:          Main.hs
@@ -31,6 +43,7 @@ executable bgfx-c-haskell-example
       , base ^>=4.16.0.0
     hs-source-dirs:   example
     default-language: Haskell2010
+    
 
 -- test-suite bgfx-c-haskell-test
 --  type: exitcode-stdio-1.0
